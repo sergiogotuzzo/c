@@ -14,7 +14,7 @@ int main() {
     int v;
 
     do {
-        printf("Inserisci il numero di cifre del numero in base 2\n");
+        printf("Enter the number of values of the number in base 2\n");
         scanf("%d", &v);
     } while (v <= 0);
 
@@ -23,7 +23,7 @@ int main() {
     for (int i = 0; i < v; i++) {
         int n;
 
-        printf("Inserisci la cifra in posizione n. %d\n", i);
+        printf("Enter the value at the position n. %d\n", i);
         scanf("%d", &n);
 
         sum += n * pow(2, i);

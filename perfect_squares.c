@@ -13,7 +13,7 @@ max = 20
 int main() {
     int max;
 
-    printf("Inserisci la quantità di quadrati perfetti\n");
+    printf("Enter the quantity of perfect squares\n");
     scanf("%d", &max);
 
     int n = 1, sum = n, i = 0;
