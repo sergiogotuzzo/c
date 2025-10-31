@@ -11,22 +11,19 @@ int pow(int n, int e) {
 }
 
 int main() {
-    int v;
+    int n;
 
     do {
-        printf("Enter the number of values of the number in base 2\n");
-        scanf("%d", &v);
-    } while (v <= 0);
+        printf("Enter the number in base 2\n");
+        scanf("%d", &n);
+    } while (n <= 0);
 
     int sum = 0;
 
-    for (int i = 0; i < v; i++) {
-        int n;
-
-        printf("Enter the value at the position n. %d\n", i);
-        scanf("%d", &n);
-
-        sum += n * pow(2, i);
+    for (int i = 0; n > 0; i++) {
+        int r = n % 10;
+        sum += r * pow(2, i);
+        n /= 10;
     }
 
     printf("%d\n", sum);
